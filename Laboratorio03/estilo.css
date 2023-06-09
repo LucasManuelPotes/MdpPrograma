@@ -1,0 +1,126 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* html {
+    color-scheme: dark;
+} */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.logo{
+    width: 20%;
+    background-color: black;
+}
+
+.menu{
+    width: 80%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+.flotante{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.flotante button{
+    border: none;
+    border-radius: 50px;
+    background-color:green;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.flotante button i{
+  color: white;
+  font-size: 40px;
+ 
+}
+
+.flotante button:hover{
+    background-color: white;
+   
+  }
+
+  .flotante button:hover > i{
+    color: green;
+   
+  }
+
+  main{
+    display: flex;
+    background-color: brown;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px;
+
+  }
+
+  main .card{
+    width: 23%;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+
+  }
+
+.card .image img{
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    filter: blur(3px);
+    
+}
+
+.card .precio{
+    margin: 20px;
+    font-size: 25px;
+    padding: 5px;
+    border-left: 2px solid blue;
+    text-align: center;
+}
+
+.card .titulo{
+    padding:5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.card .image img:hover{
+    filter:none !important;   
+}
+
+.card .precio:hover{
+   background-color: rgb(113, 92, 133);
+   transform: translateY(-50%);
+   border-radius: 20px;
+}
+
+.card .precio:hover .addCard {
+    display: inline-block;
+}
+
+.card .precio:hover .button {
+   border: none;
+background-color: none;
+color: rgb(87, 103, 118);
+font-size: 20px;
+letter-spacing: 20px;
+}
+
+footer{
+    background-color: black;
+    color: wheat;
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    align-items: safe-end;
+}
