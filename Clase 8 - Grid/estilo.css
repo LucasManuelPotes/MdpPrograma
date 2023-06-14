@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.grid{
+    display: grid;    
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-areas: 'abc abc abc abc'
+                         'two three three four '
+                         'two five five five';
+    }
+    
+
+.grid, .item1, .item2, .item3, .item4, .item5{ 
+    background-color: rgb(197, 108, 29);
+    padding: 15px ;
+    border-radius: 10px;    
+    } 
+
+
+.grid > div{
+    background-color: rgb(168, 161, 143);
+    text-align: center;
+    font-size: 30px;
+    text-align: left;
+    
+    
+  
+    }
+
+    .item1{
+        grid-area: abc;
+        
+    }
+    .item2{
+        grid-area:two;
+       
+    }
+    .item3{
+        grid-area: three;
+        
+    }
+    .item4{
+        grid-area: four;
+    }
+    .item5{
+        grid-area: five;
+        grid-column: 2 /4 ;
+        
+    }
+
+    .grid .item1-a{
+        background-color: rgb(187, 156, 129);
+        padding: 10px ;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+       
+       
+       }
+
+       .grid .item1-b{
+         background-color: rgb(187, 156, 129);
+        padding: 10px ;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+       
+       }
+
+       .grid .item1-c{       
+        background-color: rgb(187, 156, 129);
+        padding: 10px ;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+       
+       }
+
+    .grid .item1-a, .grid .item1-b, .grid .item1-c {
+       text-align: left;
+       margin: 10px;
+       
+       
+       }
