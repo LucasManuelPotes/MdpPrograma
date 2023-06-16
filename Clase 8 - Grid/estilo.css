@@ -7,6 +7,7 @@
 .grid{
     display: grid;    
     gap: 5px;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     grid-template-areas: 'abc abc abc abc'
                          'two three three four '
@@ -23,15 +24,15 @@
 
 .grid > div{
     background-color: rgb(168, 161, 143);
-    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
     font-size: 30px;
-    text-align: left;
+    border-radius: 10px;
     
-    
-  
     }
 
     .item1{
+        display: grid;
         grid-area: abc;
         
     }
@@ -52,37 +53,16 @@
         
     }
 
-    .grid .item1-a{
-        background-color: rgb(187, 156, 129);
-        padding: 10px ;
-        margin: 5px;
-        border: 1px solid black;
+    .item1 p{
+        background-color: beige;
+        padding: 10px;
+        margin: 10px;
         border-radius: 10px;
-       
-       
-       }
+        border: 2px solid yellowgreen;
+        height: 20px;
+    }
 
-       .grid .item1-b{
-         background-color: rgb(187, 156, 129);
-        padding: 10px ;
-        margin: 5px;
-        border: 1px solid black;
-        border-radius: 10px;
-       
-       }
-
-       .grid .item1-c{       
-        background-color: rgb(187, 156, 129);
-        padding: 10px ;
-        margin: 5px;
-        border: 1px solid black;
-        border-radius: 10px;
-       
-       }
-
-    .grid .item1-a, .grid .item1-b, .grid .item1-c {
-       text-align: left;
-       margin: 10px;
-       
-       
-       }
+    p{
+        font-size: 20px;
+        font-weight: bold;
+    }
