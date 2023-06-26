@@ -1,0 +1,248 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    font-family: 'Oswald';
+}
+
+/* Div que contiene el Header,main,aside y foooter */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: #f2f2f2;
+    margin: 0px;
+}
+
+
+header img {
+  max-width: 100px;
+  margin-left: 20px;
+}
+
+header nav {
+    font-family: 'Assistant';
+}
+
+.menuHeader ul {
+    display: flex;
+    list-style: none;
+    margin-right: 120px;
+}
+
+.menuHeader li {
+    margin-left: 10px;
+}
+
+.menuHeader li a {
+    text-decoration: none;
+    padding: 20px;
+     color:  rgb(89, 39, 107);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menuHeader li a:hover {
+    color: #ed1b24;
+    padding-top: 1px;
+}
+/* Main */
+main {
+    display: grid;
+    width: 70%;
+    min-height: 75vh;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(197, 108, 29);
+    padding: 15px;
+    border-radius: 10px;
+     overflow-y: auto;
+    height: 600px;
+
+    
+}
+
+.img-item {
+    max-width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: rgba(188, 133, 65, 0.611);
+    border: 1px solid orange;
+    margin: 5px;
+    margin-top: 10px;
+   
+}
+
+.description {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.precio {
+    color: #fff;
+}
+
+/* Aside */
+
+aside{
+    display: flex;
+    flex-wrap: wrap;   
+    width: 30%;
+    min-height: 70vh;
+    border: 1px solid black;
+    background-color: #f2f2f2;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+aside  nav ul{
+/* list-style: none; */
+margin: 0px;
+padding: 0px;
+}
+
+aside  nav li{
+    margin-bottom: 10px;
+    /* border-bottom: 1px solid  rgb(89, 39, 107); */
+    margin-left: 20px;
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+aside nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+    
+}
+aside nav li:hover{
+    border-bottom: 1px solid #021651;
+    color:  rgb(89, 39, 107);
+}
+
+
+
+/* Formulario del aside */
+
+aside .form{
+    width: 100%;
+    border: 2px solid rgb(89, 39, 107);
+    border-radius: 10px;
+    padding: 5px;
+    height: 50vh;
+               
+}
+
+.formu{   
+    margin: 20px;
+}
+aside .form h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+aside .form input, aside .form textarea{
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+aside .form textarea{
+    height: 80px!important;
+    resize: none;
+}
+aside .form button{
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background-color:  #62495b;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer{ 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 60px;
+    background-color:   #62495b;
+    color: white;
+}
+
+footer .one{
+    order: 1;
+}
+footer .two{
+  order: 2;
+}
+footer .two a{
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        margin: 0;
+    }
+
+    .menuHeader ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .menuHeader li {
+        margin: 5px 0;
+    }
+
+    main{
+        padding: 10px;
+        max-height: none;
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+
+
+    .container {
+        padding: 10px;
+    }
+}
