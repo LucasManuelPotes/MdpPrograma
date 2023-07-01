@@ -1,31 +1,46 @@
-/* .not-padding{
-    padding: 0px !important;
-} */
 
 
-#carousel-item{
-  max-width: auto;
-   
-} 
-
-
-
-.hijo1{
-    height: 150px;
+/* Header */
+.container-fluir .header{
+    background-color:rgb(139, 193, 139) !important;
 }
 
-.padre{
-    max-width:800px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto, auto); 
-    gap: 1rem;
-      
+.logo{
+   height: 45px;
+   width: 45px;
+  border-radius: 40px;
+  margin-left: 10px;
 }
 
 
-
-img{
-    width: 100%;
-   
+.carrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(88, 61, 61);
+    border-radius: 20px;
+    width: 150px;
+     position: relative;
+     right: 70px; 
+  
 }
+
+
+.carrito p {
+ color: aliceblue;
+ font-size: 16px;
+ font-weight: bold;
+ position: relative;
+ top: 7px;
+ right: 4px;
+ 
+}
+
+.lupa{
+  
+    margin: 10px;
+
+}
+
+
+/* Primer Seccion */
