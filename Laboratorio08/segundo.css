@@ -1,0 +1,133 @@
+
+/* Header */
+.container-fluir .header{
+    background-color:rgb(139, 193, 139) !important;
+    height: 100px;
+}
+
+.logo{
+   height: 45px;
+   width: 45px;
+  border-radius: 40px;
+  margin-left: 25px;
+}
+
+.carrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(88, 61, 61);
+    border-radius: 20px;
+    width: 150px;
+     position: relative;
+     right: 70px; 
+  
+}
+
+.carrito p {
+ color: aliceblue;
+ font-size: 16px;
+ font-weight: bold;
+ position: relative;
+ top: 7px;
+ right: 4px;
+ 
+}
+
+.lupa{  
+    margin: 10px;
+}
+
+
+/* Primer Seccion */
+
+.img1{
+    width: 250px;
+    height: 320px;
+    position: relative;
+    right: 45px;
+  }
+
+#carouselExampleCaptions{
+      width: 97%;
+      /* height: 49vh; */
+}
+
+
+/* Segunda Seccion */
+
+.seccion2{
+   position: relative;
+   left: 120px;  
+   margin-top:60px;
+}
+
+
+/* Tercera Seccion */
+section h4{
+  color: rgb(138, 203, 132);
+  text-align: center;
+  margin:80px;
+  letter-spacing:3px;
+  
+ }
+
+
+.seccion3{
+    position: relative;
+    left: 20px;  
+    
+ }
+
+ .div3{
+    margin: 10px;
+    height: 330px;
+    border:1px solid black;
+    position: relative;
+    left: 50px;  
+ }
+
+ .img3{
+    width: 227px;
+    height: 280px;
+    position: relative;
+    right: 12px;
+ }
+
+ .div3 p {
+    font-weight:bold;
+    letter-spacing:2px;
+ }
+
+
+ /* Cuarta Seccion */
+
+ .img4{
+    width: 250px;
+    height: 280px;
+    position: relative;
+    right: 90px;
+    padding: 25px;
+    margin: 10px;
+  }
+
+ .fotogrande{
+    width: 400px;
+    height: 450px;
+    margin: 80px;
+  } 
+
+  /* Footer */
+  footer{
+ display: flex;
+ align-items: center;
+ justify-content:center;
+  height: 130px;
+  width: 100%;
+  background-color: #73b474 ;
+  }
+
+  .footer img{
+  height: 120px;
+  
+  }
