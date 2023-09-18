@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.portada {
+  width: 92%;
+  height: 698px;
+  margin: 50px;
+  position: relative; /* Agregamos posición relativa a la portada */
+}
+
+.titulo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%; /* Centramos verticalmente en la mitad de la portada */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); /* Centramos verticalmente */
+}
+
+
+
+img {
+  width: 50%;
+  height: 698px;
+  position: relative;
+  z-index: 0;
+}
+
+
+
+.titulo {
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+  color: rgb(121, 78, 202);
+  opacity: 0; /* Oculta las letras inicialmente */
+  animation: aparecer 1s ease-in-out forwards; /* Agrega una animación */
+}
+
+
+.titulo2 {
+  font-size: 30px;
+  color: rgb(115, 106, 106);
+  text-align: center;
+  opacity: 0; /* Oculta las letras inicialmente */
+  transform: rotate(360deg); /* Inicialmente gira las letras 360 grados */
+  animation: aparecer2 3s ease-in-out forwards; /* Agrega una animación diferente */
+}
+
+.titulo3 {
+  font-size: 30px;
+  color: rgb(116, 97, 97);
+  text-align: center;
+  opacity: 0; /* Oculta las letras inicialmente */
+  transform: skewX(45deg); /* Inicialmente sesga las letras */
+  animation: aparecer3 5s ease-in-out forwards; /* Agrega una animación diferente */
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1; /* Hace que las letras sean visibles */
+  }
+}
+
+@keyframes aparecer1 {
+  to {
+    opacity: 1;
+    transform: scale(1); /* Escala las letras a su tamaño original */
+  }
+}
+
+@keyframes aparecer2 {
+  to {
+    opacity: 1;
+    transform: rotate(0); /* Restablece la rotación original */
+  }
+}
+
+@keyframes aparecer3 {
+  to {
+    opacity: 1;
+    transform: skewX(0); /* Restablece el sesgo original */
+  }
+}
+
+.productos-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en una sola fila */
+}
+
+.producto {
+   margin: 2px; /* Espacio entre los productos */
+  /* background-color: red; */
+   
+   }
+
+/* Ajusta el estilo de los productos según tus necesidades */
+.producto img {
+  max-width: 80%;
+  height: auto;
+}
