@@ -3,10 +3,13 @@ import Image from 'next/image'
 import Button from '@/app/components/button'
 import {NewButton} from '@/app/components/button2'
 
+
 export default function Home() {
+
   const variable = 43;
   return (
-    <div className="container ">
+    <>
+      <div className="container ">
       <div className='titulo1'>
     <h1 className="titulo">PRODUCTOS DE ANIME🧙‍♂️🐉</h1> 
     <p className="titulo2">Demon Slayer - DragonBall Z - Naruto - One Piece</p>
@@ -17,7 +20,9 @@ export default function Home() {
     </Button>
     <NewButton/>
     <img className='portada' src='assets/portada.png '></img>
+    <Button variant="primary">Primary</Button>{' '}
+                      
   </div>
-        
+  </>
   )
 }

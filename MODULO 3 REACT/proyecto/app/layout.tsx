@@ -2,6 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { HeaderPage}  from '@/app/components/header'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -23,8 +25,9 @@ export default function RootLayout({
           <Link href='/' className="rounded-lg px-3 py-2 text-green-50 font-medium hover:bg-slate-100 hover:text-slate-900">Home</Link>
           <Link href='/productos' className="rounded-lg px-3 py-2 text-green-50 font-medium hover:bg-slate-100 hover:text-slate-900">Productos</Link>
           <Link href='/acercade' className="rounded-lg px-3 py-2 text-green-50 font-medium hover:bg-slate-100 hover:text-slate-900">Acerca de</Link>
+          <HeaderPage/>
         </nav>
-     
+            
         {children}
         
         </body>

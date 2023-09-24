@@ -1,5 +1,5 @@
 'use client'
-import { Persons } from '@/app/components/person'
+import { Persons } from '@/app/components/persona'
 import { TrashIcon, PencilIcon } from '@heroicons/react/20/solid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPencilAlt } from '@fortawesome/free-solid-svg-icons'
